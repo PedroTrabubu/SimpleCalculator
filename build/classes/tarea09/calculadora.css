@@ -1,0 +1,96 @@
+/* Estilo general del fondo */
+.root {
+    -fx-background-color: linear-gradient(to bottom right, #dfe9f3, #ffffff);
+    -fx-padding: 20px;
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+    -fx-font-size: 16px;
+}
+
+/* Pantalla de la calculadora */
+.text-field {
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #222;
+    -fx-background-color: rgba(255, 255, 255, 0.65);
+    -fx-background-radius: 12px;
+    -fx-border-radius: 12px;
+    -fx-border-color: rgba(255, 255, 255, 0.6);
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 6, 0, 0, 2);
+    -fx-padding: 10px;
+}
+
+/* Estilo general para todos los botones */
+.button {
+    -fx-font-size: 20px;
+    -fx-background-color: rgba(255, 255, 255, 0.45);
+    -fx-text-fill: #2c2c2c;
+    -fx-background-radius: 14px;
+    -fx-border-radius: 14px;
+    -fx-border-color: rgba(255, 255, 255, 0.5);
+    -fx-border-width: 1.5px;
+    -fx-cursor: hand;
+    -fx-font-weight: 500;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 6, 0, 0, 2);
+    -fx-transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.75);
+}
+
+.button:pressed {
+    -fx-background-color: rgba(220, 220, 220, 0.85);
+}
+
+/* Operadores (+, -, *, /, etc.) */
+.button.operador {
+    -fx-background-color: linear-gradient(to bottom right, #6fb1fc, #4364f7);
+    -fx-text-fill: #fff;
+    -fx-font-weight: bold;
+}
+
+.button.operador:hover {
+    -fx-background-color: linear-gradient(to bottom right, #5a9efb, #3858f6);
+}
+
+.button.operador:pressed {
+    -fx-background-color: linear-gradient(to bottom right, #4a87f3, #2d46e6);
+}
+
+/* Botón de igual */
+.button.igual {
+    -fx-background-color: linear-gradient(to bottom right, #ff7b00, #ffb347);
+    -fx-text-fill: #fff;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 6, 0, 0, 2);
+}
+
+.button.igual:hover {
+    -fx-background-color: linear-gradient(to bottom right, #ff6600, #ffaa33);
+}
+
+.button.igual:pressed {
+    -fx-background-color: linear-gradient(to bottom right, #e65c00, #ff9933);
+}
+
+/* Botones de limpieza (C y <) */
+.button.limpiar {
+    -fx-background-color: linear-gradient(to bottom right, #ff5f6d, #ffc371);
+    -fx-text-fill: #fff;
+    -fx-font-weight: bold;
+}
+
+.button.limpiar:hover {
+    -fx-background-color: linear-gradient(to bottom right, #ff4b5c, #ffb86c);
+}
+
+.button.limpiar:pressed {
+    -fx-background-color: linear-gradient(to bottom right, #e83e51, #ffa94d);
+}
+
+/* Animación sutil en hover */
+.button:hover {
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
